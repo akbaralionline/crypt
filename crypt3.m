@@ -392,6 +392,6 @@ int main (int argc, char *argv[])
 	fclose(fs);
 	NSLog(@"Process Completed");
 	[mapClass release];
-    [pool drain];
+    	[pool drain];
 	return 0;
 }
