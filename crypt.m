@@ -44,7 +44,8 @@ where 	crypt is the binary file or executable
 	}
 
 	/* method Convert Key to Decimal */
-	- (int)KeytoDecimal: (char)c{
+	- (int)KeytoDecimal: (char)c
+	{
 		int t;
 		t=c;
 		if((t>=48)&&(t<=57))
@@ -60,7 +61,8 @@ where 	crypt is the binary file or executable
 	}
 
 	/* method Shift Horizontal Top */
-	- (int)HorizontalShiftTop: (int)t{
+	- (int)HorizontalShiftTop: (int)t
+	{
 		int i,j;
 		for(i=0;i<16;i++)
 			tempmap[i]=0;
@@ -79,7 +81,8 @@ where 	crypt is the binary file or executable
 	}
 
 	/* method Shift Horizontal Bottom */
-	- (int)HorizontalShiftBottom: (int)t{
+	- (int)HorizontalShiftBottom: (int)t
+	{
 		int i,j;
 		for(i=0;i<16;i++)
 			tempmap[i]=0;
@@ -99,7 +102,8 @@ where 	crypt is the binary file or executable
 	}
 
 	/* method Shift Vertical Right */
-	- (int)VerticalShiftRight: (int)t{
+	- (int)VerticalShiftRight: (int)t
+	{
 		int i,j;
 		for(i=0;i<16;i++)
 			tempmap[i]=0;
@@ -118,7 +122,8 @@ where 	crypt is the binary file or executable
 	}
 
 	/* method Shift Vertical Left */
-	- (int)VerticalShiftLeft: (int)t{
+	- (int)VerticalShiftLeft: (int)t
+	{
 		int i,j;
 		for(i=0;i<16;i++)
 			tempmap[i]=0;
@@ -162,7 +167,7 @@ int main (int argc, char *argv[])
 	{
 	
 
-    	if(strcmp(argv[1],"-h")==0)
+    		if(strcmp(argv[1],"-h")==0)
 		{
 			NSLog(@"Crypt: A command line encryption decryption tool similar to AES encryption declaration.\n");
 			printf("Crypt uses Hexacode key for the encryption and decryption. User need to generate the key and the recommended ");	
