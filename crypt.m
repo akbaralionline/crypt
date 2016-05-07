@@ -7,8 +7,7 @@ where 	crypt is the binary file or executable
 		source is the source file
 		target is the target file
 */
-#import <objc/objc.h>
-#import <objc/Object.h>
+
 #import <Foundation/Foundation.h>
 
 	int datamap[16][16];
