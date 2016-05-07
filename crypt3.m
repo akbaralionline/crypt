@@ -291,7 +291,7 @@ int main (int argc, char *argv[])
 	{
 		/*Start Encryption*/
 		NSLog(@"Preparing for Encryption Process");
-		
+		/*
 		for(i=0;i<strlen(key);i++)
 		{
 			for(j=0;j<16;j++)
@@ -305,7 +305,8 @@ int main (int argc, char *argv[])
 				}
 				
 			}
-		}	
+		}
+		*/
 		//while((c = fgetc(fs)) != EOF)
 		while (!feof(fs))  
 		{
@@ -328,6 +329,7 @@ int main (int argc, char *argv[])
 	{
 		/*Start Decryption*/
 		NSLog(@"Preparing for Decryption Process");
+		/*
 		int k;
 		for(k=0;k<strlen(key);k++)
 		{
@@ -357,6 +359,7 @@ int main (int argc, char *argv[])
 			}
 			
 		}
+		*/
 		t=0;
 		while(fscanf(fs," %d ",&t)==1)
 		{
